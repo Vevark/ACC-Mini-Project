@@ -9,9 +9,19 @@ convert.py is used to convert all .msh files into .xml files
 To run the project, enter celery folder and do following commands
 ```bash
 docker-compose build
-docker-compose up --scale worker=1
+docker-compose up --scale worker=2
 
-docker exec -it celery_worker_1 /bin/bash
-python3 run.py
+docker exec -it docker_worker_1 /bin/bash
+docker exec -it docker_worker_2 /bin/bash
 ```
-There's gonna be 1 celery_worker docker container and 1 rabbitmq docker container with the calculation solving in rabbitmq server.
+copy needed xml files into worker containers, run
+```bash
+python3 run_1.py
+```
+and
+```bash
+python3 run_2.py
+```
+in different worker containers
+
+There's gonna be 2 docker_worker docker containers and 1 rabbitmq docker container with the calculation solving on rabbitmq server.
