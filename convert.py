@@ -1,7 +1,7 @@
 import os
-
-files = os.listdir('murtazo/cloudnaca/msh/')
+  
+files = os.listdir('cloudnaca/msh/')
 for file in files:
     if 'msh' in file:
-        out = 'murtazo/cloudnaca/msh/'+file.split('.')[0] + '.xml'
-        os.system('dolfin-convert murtazo/cloudnaca/msh/'+file+' '+out)
+        out = './mesh_xml/'+file.split('.')[0] + '.xml'
+        os.system('dolfin-convert cloudnaca/msh/'+file+' '+out)
