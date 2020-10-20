@@ -1,0 +1,15 @@
+version: '3'
+services:
+    rabbit:
+        hostname: rabbit
+        image: rabbitmq:latest
+        environment:
+            - RABBITMQ_DEFAULT_USER=u
+            - RABBITMQ_DEFAULT_PASS=p
+        ports:
+            - "5672:5672"
+    
+    worker:
+        build:        
+            context: .
+            dockerfile: Dockerfile
