@@ -31,4 +31,4 @@ python3 run.py NAME_OF_A_MESH_XML_FILE
 ```
 to distribute tasks in different worker containers start working on RabbitMQ solver.
 
-There's gonna be 2 docker_worker docker containers and 1 rabbitmq docker container with the calculation solving on rabbitmq server.
+There's gonna be 2 worker docker containers and 1 rabbitmq docker container with the calculation solving on RabbitMQ server.
