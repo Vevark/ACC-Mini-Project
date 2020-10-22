@@ -30,7 +30,5 @@ The number of worker is changeable. Run
 python3 run.py NAME_OF_A_MESH_XML_FILE
 ```
 to distribute tasks in different worker containers start working on RabbitMQ solver.
-```bash
-docker-compose run worker
 
 There's gonna be 2 docker_worker docker containers and 1 rabbitmq docker container with the calculation solving on rabbitmq server.
