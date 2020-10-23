@@ -27,7 +27,7 @@ docker exec -it docker_worker_run_2 /bin/bash
 ```
 The number of worker is changeable. Run 
 ```bash
-python3 run.py NAME_OF_A_MESH_XML_FILE
+python3 run.py mesh_xml/NAME_OF_A_MESH_XML_FILE
 ```
 to distribute tasks in different worker containers start working on RabbitMQ solver.
 
