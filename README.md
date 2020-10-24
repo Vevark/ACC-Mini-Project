@@ -16,8 +16,6 @@ docker-compose build
 
 docker-compose up --scale worker=2
 docker exec -it docker_worker_1 /bin/bash
-docker exec -it docker_worker_2 /bin/bash
-...
 ```
 OR
 ```bash
@@ -26,13 +24,11 @@ docker-compose run worker
 docker-compose run worker
 ...
 docker exec -it docker_worker_run_1 /bin/bash
-docker exec -it docker_worker_run_2 /bin/bash
-...
 ```
-The number of worker is changeable. Run 
+The number of worker is changeable. Enter any worker container to start tasks. 
 ```bash
 python3 run.py mesh_xml/NAME_OF_A_MESH_XML_FILE
 ```
-to distribute tasks in different worker containers start working on RabbitMQ solver.
+Celery will distribute tasks to workers. Messages about overall calculation process can be shown through RabbitMQ.
 
-There's gonna be 2 worker docker containers and 1 solver docker container with the calculation solving on RabbitMQ server.
+There's gonna be 2 worker docker containers and 1 broker docker container with the calculation solving on RabbitMQ server.
