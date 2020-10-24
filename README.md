@@ -1,6 +1,6 @@
 # ACC-Mini-Project
 
-In this project, we use Celery as workers, RabbitMQ as the solver, Flask as the application and  MariaDB as the database. How the overall service workflow works can be seen in figure below.
+In this project, we use Celery as workers, RabbitMQ as the broker, Flask as the application and  MariaDB as the database. How the overall service workflow works can be seen in figure below.
 
 <div style="text-align:center"><img src="end-user.png" alt="workflow" width=50% /></div>
 
