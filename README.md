@@ -1,5 +1,9 @@
 # ACC-Mini-Project
 
+In this project, we use Celery as workers, RabbitMQ as the solver, Flask as the application and  MariaDB as the database. ] How the overall service workflow works can be seen in figure below.
+
+<div style="text-align:center"><img src="end-user.png" alt="workflow" width=50% /></div>
+
 Run Celery and RabbitMQ with Docker, and generate worker clusters
 
 steps.sh is used to prepare meshes for calculation and make airfoil available for execution
@@ -31,4 +35,4 @@ python3 run.py mesh_xml/NAME_OF_A_MESH_XML_FILE
 ```
 to distribute tasks in different worker containers start working on RabbitMQ solver.
 
-There's gonna be 2 worker docker containers and 1 rabbitmq docker container with the calculation solving on RabbitMQ server.
+There's gonna be 2 worker docker containers and 1 solver docker container with the calculation solving on RabbitMQ server.
