@@ -1,4 +1,4 @@
-# ACC-Mini-Project
+# Airfoil Project
 
 In this project, we use Celery as workers, RabbitMQ as the broker, Flask as the application and  MariaDB as the database. How the overall service workflow works can be seen in figure below.
 
