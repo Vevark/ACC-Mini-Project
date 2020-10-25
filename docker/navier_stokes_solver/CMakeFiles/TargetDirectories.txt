@@ -1,3 +1,0 @@
-/app/murtazo/navier_stokes_solver/CMakeFiles/rebuild_cache.dir
-/app/murtazo/navier_stokes_solver/CMakeFiles/airfoil.dir
-/app/murtazo/navier_stokes_solver/CMakeFiles/edit_cache.dir
