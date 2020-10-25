@@ -22,7 +22,7 @@ In this project, we use Celery as workers, RabbitMQ as the broker, Flask as the 
 
     Start all services with N workers by <code>docker-compose up --scale worker=N</code> 
 
-3.  Enter one worker by <code>docker exec -it docker_worker_run_1 /bin/bash</code>
+3.  Enter one worker by <code>docker exec -it docker_worker_1 /bin/bash</code>
     
     Call Celery task by <code>python3 run.py mesh_xml/NAME_OF_A_MESH_XML_FILE</code> where <code>NAME_OF_A_MESH_XML_FILE</code> is any mesh file existing in <code>mesh_xml</code>
     
